@@ -6,12 +6,8 @@ const galacticObject = {
   jupiter: 11.86 
 }
 
-export function earthYears(planet) {
-  let planetYears = galacticObject[planet] * 365;
-  return planetYears;
+export function galacticAge(planet, age) {
+  let convertedAge = Math.floor(age / galacticObject[planet]);
+  return convertedAge;
 }
 
-export function galacticAge(planet, age) {
-  let planetAge = earthYears(planet) * age;
-  return planetAge;
-}

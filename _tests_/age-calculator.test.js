@@ -1,15 +1,10 @@
-import { earthYears } from "../src/js/age-calculator.js";
 import { galacticAge } from "../src/js/age-calculator.js";
+
 
 describe('Galactic Age Converter', () => {
 
-  test('should test that earthYears returns number of earth years for particular planet', () => {
+  test('should test that age is converted to planets years based on age and planet inputted', () => {
 
-    expect(earthYears('mercury')).toEqual(87.6);
-  });
-
-  test('should test that a users age will be converted to the selected planets years', () => {
-
-    expect(galacticAge('mercury', 10)).toEqual(876);
+    expect(galacticAge('mercury', 10)).toEqual(41);
   });
 })
