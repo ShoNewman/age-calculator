@@ -14,4 +14,8 @@ describe('Galactic Age Converter', () => {
   test('should test that age is converted to mars years', () => {
     expect(galacticAge('mars', 10)).toEqual(5);
   });
+
+  test('should test that age is converted to mars years', () => {
+    expect(galacticAge('jupiter', 10)).toEqual(0);
+  });
 })
