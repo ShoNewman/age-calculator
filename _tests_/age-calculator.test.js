@@ -2,8 +2,8 @@ import ageCalculator from "../src/js/age-calculator.js";
 
 describe('ageCalculator', () => {
 
-  test('should test that ageCalculator function exists and is linked properly to test', () => {
+  test('should test that ageCalculator return number of earth years for particular planet', () => {
 
-    expect(ageCalculator(10)).toEqual(10);
+    expect(ageCalculator('mercury')).toEqual(87.6);
   });
 })
