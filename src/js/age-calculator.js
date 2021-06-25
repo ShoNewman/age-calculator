@@ -11,3 +11,13 @@ export function galacticAge(planet, age) {
   return convertedAge;
 }
 
+export class userInfo {
+  constructor(name, age, lifestyle, country, activity, smoker) {
+    this.name = name;
+    this.age = age;
+    this.lifestyle = lifestyle;
+    this.country = country;
+    this.activity = activity;
+    this.smoker = smoker;
+  }
+}
