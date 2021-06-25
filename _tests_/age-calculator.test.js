@@ -23,12 +23,12 @@ describe('Galactic Age Converter', () => {
 
 describe('user info', () => {
   test('should test that user info object can be created from constructor', () => {
-    let newUser = new userInfo('Sho', 10, 'vegetarian', 'USA', 'active', false);
+    let newUser = new userInfo('Sho', 10, 10, -10, -5, 20);
     expect(newUser.name).toEqual('Sho');
     expect(newUser.age).toEqual(10);
-    expect(newUser.lifestyle).toEqual('vegetarian');
-    expect(newUser.country).toEqual('USA');
-    expect(newUser.activity).toEqual('active');
-    expect(newUser.smoker).toEqual(false);
+    expect(newUser.lifestyle).toEqual(10);
+    expect(newUser.country).toEqual(-10);
+    expect(newUser.activity).toEqual(-5);
+    expect(newUser.smoker).toEqual(20);
   });
 });
