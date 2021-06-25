@@ -6,7 +6,7 @@ const galacticObject = {
   jupiter: 11.86 
 }
 
-export function galacticAge(planet, age) {
+export function galacticYears(planet, age) {
   let convertedAge = Math.floor(age / galacticObject[planet]);
   return convertedAge;
 }
@@ -21,8 +21,9 @@ export class userInfo {
     this.smoker = smoker;
   }
 
-  lifeExpectancy() {
+  life(planet, age) {
    let life = this.lifestyle + this.country + this.activity + this.smoker;
-   return life;
+   let lifeExpectancy = galacticYears(planet, age) + galacticYears(planet, life);
+   return lifeExpectancy;
   }
 }
