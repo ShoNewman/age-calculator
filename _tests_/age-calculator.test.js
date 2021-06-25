@@ -22,8 +22,14 @@ describe('Galactic Age Converter', () => {
 });
 
 describe('user info', () => {
+  let newUser;
+
+  beforeEach(() => {
+    newUser = new userInfo('Sho', 10, 10, -10, -5, 20);
+  });
+
   test('should test that user info object can be created from constructor', () => {
-    let newUser = new userInfo('Sho', 10, 10, -10, -5, 20);
+    
     expect(newUser.name).toEqual('Sho');
     expect(newUser.age).toEqual(10);
     expect(newUser.lifestyle).toEqual(10);
@@ -31,4 +37,8 @@ describe('user info', () => {
     expect(newUser.activity).toEqual(-5);
     expect(newUser.smoker).toEqual(20);
   });
+
+  test('should test that lifeExpectancy method returns a value that increases or decreases the life expectancy based on user info', () => {
+    expect(newUser.lifeExpectancy()).toEqual(15);
+  })
 });

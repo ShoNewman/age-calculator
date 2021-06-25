@@ -23,5 +23,6 @@ export class userInfo {
 
   lifeExpectancy() {
    let life = this.lifestyle + this.country + this.activity + this.smoker;
+   return life;
   }
 }
