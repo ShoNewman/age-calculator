@@ -39,6 +39,6 @@ describe('user info', () => {
   });
 
   test('should test that lifeExpectancy method returns a value that increases or decreases the life expectancy based on user info', () => {
-    expect(newUser.life('mercury', 10)).toEqual(20);
+    expect(newUser.life('mercury', 10)).toEqual(90);
   })
 });

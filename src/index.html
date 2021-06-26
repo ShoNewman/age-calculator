@@ -4,6 +4,65 @@
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h2 class="jumbotron">Galactic Age Calculator</h2>
+    <form id="galactic-age-form needs-validation">
+      <div class="form-row">
+        <div class="col form-group">
+          <input type="text" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="col form-group">
+          <input type="number" class="form-control" placeholder="age" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col form-group">
+          <select id="lifestyle" class="form-control" required>
+            <option selected disabled value="">Lifestyle</option>
+            <option value="10">Vegetarian</option>
+            <option value="-10">Meat Eater</option>
+            <option value="-8">Pescatarian</option>
+            <option value="-20">Junk Food Lover</option>
+          </select>
+        </div>
+        <div class="col form-group">
+          <select id="country" class="form-control" required>
+            <option selected disabled value="">Country of Residence</option>
+            <option value="8">USA</option>
+            <option value="12">Japan</option>
+            <option value="10">France</option>
+            <option value="3">China</option>
+            <option value="-5">Russia</option>
+            <option value="-17">South Africa</option>
+            <option value="-27">Zimbabwe</option>
+            <option value="-">India</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col form-group form-group">
+          <select id="activity-level" class="form-control" required>
+            <option selected disabled value="">Activity Level</option>
+            <option value="8">Athlete</option>
+            <option value="6">Active</option>
+            <option value="-5">Sedentary</option>
+            <option value="-10">Couch Potato</option>
+          </select>
+        </div>
+        <div class="col form-group">
+          <select id="smoking-status" class="form-control" required>
+            <option selected disabled value="">Smoking Status</option>
+            <option value="-20">Chain Smoker</option>
+            <option value="-10">Heavy Smoker</option>
+            <option value="-8">Occasional Smoker</option>
+            <option value="10">Never Smoked</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+  </div>
 </body>
 </html>

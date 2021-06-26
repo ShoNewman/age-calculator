@@ -23,7 +23,7 @@ export class userInfo {
 
   life(planet, age) {
    let life = this.lifestyle + this.country + this.activity + this.smoker;
-   let lifeExpectancy = galacticYears(planet, age) + galacticYears(planet, life);
+   let lifeExpectancy = galacticYears(planet, age) + galacticYears(planet, life) + 70;
    return lifeExpectancy;
   }
 }
