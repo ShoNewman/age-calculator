@@ -11,6 +11,7 @@ export function galacticYears(planet, age) {
   return convertedAge;
 }
 
+//Galactic Years
 export class UserInfo {
   constructor(planet, name, age, lifestyle, country, activity, smoker) {
     this.planet = planet;
@@ -24,10 +25,7 @@ export class UserInfo {
 
   life(planet, age) {
    let life = this.lifestyle + this.country + this.activity + this.smoker;
-   console.log(life);
    let lifeExpectancy = galacticYears(this.planet, this.age) + galacticYears(this.planet, life) + 70;
-   console.log('years: ' + galacticYears(planet, age));
-   console.log('planet' + galacticYears(planet, life));
    return lifeExpectancy;
   }
 }
