@@ -2,28 +2,40 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import { galacticYears, UserInfo } from './js/age-calculator';
 
-//From Boostrap Documentation for form validation
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+$(document).ready(function() {
+$('#needs-validation').on('click', function(event) {
+  event.preventDefault();
+
+  let planet = $("#planet").val();
+  let name = $("#name").val();
+  let age = $("#age").val();
+  let lifestyle = $("#lifestyle").val();
+  let country = $("#country").val();
+  let activity = $("#activity-level").val();
+  let smoking = $("#smoking-status").val();
+  console.log(smoking);
+  
+  let user = new UserInfo(name, age, lifestyle, country, activity, smoking); 
+  console.log(user);
+
+  let galacticAge = galacticYears(planet, age);
+  console.log('age ' + galacticAge);
+  let galacticLifeExpectancy = user.life();
+  console.log('expectancy ' + galacticLifeExpectancy);
 
 
-// $('#galactic-age-form').submit(function(event) {
-//   event.preventDefault();
-// })
+    $("#output").append(`<h5 class="card-title">${galacticAge}</h5`);
+    $("#output").append(`<h5 class="card-title">${galacticLifeExpectancy}</h5`);
+
+  
+});
+
+})
+
+
+
+
+
 

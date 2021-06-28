@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1624666762460" clover="3.2.0">
-  <project timestamp="1624666762461" name="All files">
+<coverage generated="1624872097436" clover="3.2.0">
+  <project timestamp="1624872097436" name="All files">
     <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="15" coveredelements="15" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="age-calculator.js" path="/Users/sho/Desktop/Epicodus/age-calculator/src/js/age-calculator.js">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>

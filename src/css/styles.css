@@ -1,0 +1,22 @@
+.container {
+
+}
+form {
+  
+}
+.form-row {
+
+}
+.col-md-6 {
+  text-align: right;
+}
+.col-md-6 select {
+  text-align: right;
+  width: 50%;
+  float: left;
+}
+#submit {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}

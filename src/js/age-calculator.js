@@ -1,17 +1,17 @@
 // Galactic Object
-const galacticObject = {
+export const galacticObject = {
   mercury: 0.24, 
   venus: 0.62 ,
   mars: 1.88,
   jupiter: 11.86 
-}
+};
 
 export function galacticYears(planet, age) {
   let convertedAge = Math.floor(age / galacticObject[planet]);
   return convertedAge;
 }
 
-export class userInfo {
+export class UserInfo {
   constructor(name, age, lifestyle, country, activity, smoker) {
     this.name = name;
     this.age = age;
