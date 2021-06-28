@@ -25,10 +25,11 @@ describe('user info', () => {
   let newUser;
 
   beforeEach(() => {
-    newUser = new UserInfo('Sho', 10, -10, -10, -5, 20);
+    newUser = new UserInfo('mercury', 'Sho', 10, -10, -10, -5, 20);
   });
 
   test('should test that user info object can be created from constructor', () => {
+    expect(newUser.planet).toEqual('mercury');
     expect(newUser.name).toEqual('Sho');
     expect(newUser.age).toEqual(10);
     expect(newUser.lifestyle).toEqual(-10);
@@ -38,7 +39,7 @@ describe('user info', () => {
   });
 
   test('should test that lifeExpectancy method returns a value that increases or decreases the life expectancy based on user info', () => {
-    expect(newUser.life('mercury', 10)).toEqual(90);
+    expect(newUser.life(newUser.planet, newUser.age)).toEqual(90);
   })
  
 });
