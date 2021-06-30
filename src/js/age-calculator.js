@@ -1,9 +1,9 @@
 // Galactic Object
 export const galacticObject = {
-  mercury: 0.24, 
-  venus: 0.62 ,
+  mercury: 0.24,
+  venus: 0.62,
   mars: 1.88,
-  jupiter: 11.86 
+  jupiter: 11.86
 };
 
 export function galacticYears(planet, age) {
@@ -23,9 +23,9 @@ export class UserInfo {
     this.smoker = smoker;
   }
 
-  life(planet, age) {
-   let life = this.lifestyle + this.country + this.activity + this.smoker;
-   let lifeExpectancy = galacticYears(this.planet, this.age) + galacticYears(this.planet, life) + 70;
-   return lifeExpectancy;
+  life() {
+    let life = this.lifestyle + this.country + this.activity + this.smoker + 70;
+    let lifeExpectancy = galacticYears(this.planet, life);
+    return lifeExpectancy;
   }
 }

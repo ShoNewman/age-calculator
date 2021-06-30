@@ -1,11 +1,5 @@
-.container {
-
-}
-form {
-  
-}
-.form-row {
-
+.jumbotron {
+  margin-top: 4%;
 }
 .col-md-6 {
   text-align: right;
@@ -19,4 +13,18 @@ form {
   display: block;
   margin: auto;
   margin-top: 5%;
+}
+input:invalid, select:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required, select:invalid {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid, select:invalid {
+  border: 2px solid black;
+}
+#output {
+  display: none;
 }
